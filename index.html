@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" />
+    <meta name="description"
+        content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>La Abundancia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style type="text/css">
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: grayscale;
+        }
+
+        .ui.inverted.segment {
+            background-color: #777;
+        }
+
+        .ui.vertical.segment:not(.inverted) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .six.wide.column img {
+            width: 100%;
+        }
+
+        .ui.borderless.inverted.menu {
+            background-color: #2f2f2f;
+            border-radius: 4px;
+            flex-wrap: wrap;
+        }
+
+        .ui.borderless.inverted.menu .active.item {
+            background-color: black;
+        }
+
+        span.sub {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .ten.wide.column h1 {
+            font-size: 3rem;
+        }
+
+        .ten.wide.column p {
+            font-size: 1.5rem;
+        }
+
+        p code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .ui.tablet.computer.only.padded.grid {
+            position: absolute;
+            z-index: 8;
+            width: 100%;
+            top: 1rem;
+        }
+
+        .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+            display: none;
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+            float: unset;
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+            content: "\f0d7";
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+            position: static;
+            width: 100%;
+            background-color: unset;
+            border: none;
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
+            background-color: rgb(47, 47, 47);
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+            margin-top: 6px;
+        }
+
+        .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
+        .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        .slide .ui.inverted.vertical.segment {
+            padding-top: 16rem;
+            padding-bottom: 4rem;
+            height: 600px;
+        }
+
+        .slide .ui.text.container {
+            max-width: 70%;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+
+        .slick-prev.slick-arrow {
+            padding-left: 8rem;
+            padding-right: calc(8rem + 20px);
+            display: inline-block;
+            height: 100%;
+            z-index: 32;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.5) 0%,
+                    rgba(0, 0, 0, 0.0001) 100%);
+        }
+
+        .slick-next.slick-arrow {
+            padding-left: 8rem;
+            padding-right: calc(8rem + 20px);
+            display: inline-block;
+            height: 100%;
+            z-index: 32;
+            background: linear-gradient(to left,
+                    rgba(0, 0, 0, 0.5) 0%,
+                    rgba(0, 0, 0, 0.0001) 100%);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .slick-prev.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+            }
+
+            .slick-next.slick-arrow {
+                padding-left: 4rem;
+                padding-right: calc(4rem + 20px);
+            }
+        }
+
+        .slick-dots {
+            bottom: 15px;
+        }
+
+        .slide .ui.segment h1 {
+            font-size: 3rem;
+        }
+
+        .slide .ui.segment p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body id="root">
+    <!-- Inicio del menu -->
+    <div class="ui tablet computer only padded grid">
+        <div class="ui container">
+            <div class="ui inverted borderless huge menu">
+                <a class="header item">La Abundancia</a>
+                <a href="#inicio" class="active item">Inicio</a> <a href="#producto" class="item">Productos</a>
+                <a href="#historia" class="item">Historia</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui mobile only grid">
+        <div class="ui top fixed inverted borderless huge menu">
+            <a class="header item">La Abundancia</a>
+            <div class="right menu">
+                <div class="item">
+                    <button class="ui icon toggle basic inverted button">
+                        <i class="content icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ui vertical borderless inverted fluid menu">
+                <a href="#inicio" class="active item">Inicio</a> <a href="#producto" class="item">Productos</a>
+                <a href="#historia" class="item">Historia</a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del menu -->
+    <div class="slide" id="inicio">
+        <!-- Inicio de carrusel -->
+        <div class="ui inverted vertical center aligned segment">
+            <div class="ui active text container">
+                <img src="/themes/default/assets/images/san_judas.jpg" alt="San Judas Tadeo"
+                    style="width: 100%; max-height: 300px; object-fit: cover;">
+                <h1 class="ui inverted header">SAN JUDAS TADEO</h1>
+                <p>Detalles del evento</p>
+                <button class="ui primary button" id="open-modal-sanjudas">Ver más</button>
+            </div>
+        </div>
+        <div class="ui inverted vertical center aligned segment">
+            <div class="ui active text container">
+                <img src="/themes/default/assets/images/virgen_de_guadalupe.jpg" alt="Virgen de Guadalupe"
+                    style="width: 100%; max-height: 300px; object-fit: cover;">
+                <h1 class="ui inverted header">Virgen de Guadalupe</h1>
+                <p>Detalles del evento</p>
+                <button class="ui primary button" id="open-modal-virgen">Ver más</button>
+            </div>
+        </div>
+        <div class="ui inverted vertical center aligned segment">
+            <div class="ui active text container">
+                <img src="/themes/default/assets/images/nacimiento_de_jesus1.jpg" alt="Nacimiento del niño Jesus"
+                    style="width: 100%; max-height: 300px; object-fit: cover;">
+                <h1 class="ui inverted header">Nacimiento del niño Jesus</h1>
+                <p>Detalles del evento</p>
+                <button class="ui primary button" id="open-modal-nacimiento">Ver más</button>
+            </div>
+        </div>
+        <div class="ui inverted vertical center aligned segment">
+            <div class="ui active text container">
+                <img src="/themes/default/assets/images/año_chino1.jpg" alt="Año Nuevo Chino"
+                    style="width: 100%; max-height: 300px; object-fit: cover;">
+                <h1 class="ui inverted header">Año nuevo chino</h1>
+                <p>Detalles del evento</p>
+                <button class="ui primary button" id="open-modal-nuevo">Ver más</button>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del carrusel -->
+
+    <!-- Modales san judas-->
+    <div class="ui modal" id="san-judas-modal">
+        <div class="header">San Judas Tadeo</div>
+        <div class="scrolling content">
+            <p>Very long content goes here</p>
+        </div>
+    </div>
+    <!-- Modales san judas-->
+
+    <!-- Modales virgen-->
+    <div class="ui modal" id="guadalupe-modal">
+        <div class="header">Virgen de Guadalupe</div>
+        <div class="scrolling content">
+            <p>Very long content goes here</p>
+        </div>
+    </div>
+    <!-- Modales virgen-->
+
+    <!-- Modales nacimiento-->
+    <div class="ui modal" id="nacimiento-modal">
+        <div class="header">Nacimiento del niño Jesus</div>
+        <div class="scrolling content">
+            <p>Very long content goes here</p>
+        </div>
+    </div>
+    <!-- Modales nacimiento-->
+
+    <!-- Modales año nuevo-->
+    <div class="ui modal" id="chino-modal">
+        <div class="header">Año nuevo chino</div>
+        <div class="scrolling content">
+            <p>Very long content goes here</p>
+        </div>
+    </div>
+    <!-- Modales año nuevo-->
+
+    <!-- Inicio de acordeon -->
+    <div class="ui container">
+        <div class="ui vertical segment" id="producto">
+            <div class="ui three column stackable center aligned grid container">
+                <div class="ui accordion">
+                    <div class="active title">
+                        <i class="dropdown icon"></i>
+                        Productos esotericos
+                    </div>
+                    <div class="active content">
+                        <div class="ui special cards">
+                            <div class="card">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <div class="center">
+                                                <div class="ui inverted button" id="btnModal-producto1"
+                                                    data-target="modal1">Ver más</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/themes/default/assets/images/veladora1.jpg">
+                                </div>
+                                <div class="content">
+                                    <a class="header">Ven a mi</a>
+                                    <div class="meta">
+                                        <span class="date">Informacion aqui</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="blurring dimmable image">
+                                    <div class="ui dimmer">
+                                        <div class="content">
+                                            <div class="center">
+                                                <div class="ui inverted button" id="btnModal-producto2"
+                                                    data-target="modal2">Ver más</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="/themes/default/assets/images/veladora2.jpg">
+                                </div>
+                                <div class="content">
+                                    <a class="header">Yo domino a mi patron</a>
+                                    <div class="meta">
+                                        <span class="date">Informacion aqui</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Productos simples
+                    </div>
+                    <div class="content">
+                        <div class="active content">
+                            <div class="ui special cards">
+                                <div class="card">
+                                    <div class="blurring dimmable image">
+                                        <div class="ui dimmer">
+                                            <div class="content">
+                                                <div class="center">
+                                                    <div class="ui inverted button" id="btnModal-producto1"
+                                                        data-target="modal1">Ver más</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="/themes/default/assets/images/veladora1.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <a class="header">Ven a mi</a>
+                                        <div class="meta">
+                                            <span class="date">Informacion aqui</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="blurring dimmable image">
+                                        <div class="ui dimmer">
+                                            <div class="content">
+                                                <div class="center">
+                                                    <div class="ui inverted button" id="btnModal-producto2"
+                                                        data-target="modal2">Ver más</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="/themes/default/assets/images/veladora2.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <a class="header">Yo domino a mi patron</a>
+                                        <div class="meta">
+                                            <span class="date">Informacion aqui</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="ui modal" id="modal1">
+            <i class="close icon"></i>
+            <div class="header">
+                Ven a mi
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="/themes/default/assets/images/veladora1.jpg">
+                </div>
+                <div class="description">
+                    <div class="ui header">Indormacion aqui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del modal -->
+
+        <!-- Modal -->
+        <div class="ui modal" id="modal2">
+            <i class="close icon"></i>
+            <div class="header">
+                Yo domino a mi patron
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="/themes/default/assets/images/veladora2.jpg">
+                </div>
+                <div class="description">
+                    <div class="ui header">Indormacion aqui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del modal -->
+
+        <!-- Modal -->
+        <div class="ui modal" id="modal3">
+            <i class="close icon"></i>
+            <div class="header">
+                Ven a mi
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="/themes/default/assets/images/veladora1.jpg">
+                </div>
+                <div class="description">
+                    <div class="ui header">Indormacion aqui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del modal -->
+
+        <!-- Modal -->
+        <div class="ui modal" id="modal3">
+            <i class="close icon"></i>
+            <div class="header">
+                Yo domino a mi patron
+            </div>
+            <div class="image content">
+                <div class="ui medium image">
+                    <img src="/themes/default/assets/images/veladora2.jpg">
+                </div>
+                <div class="description">
+                    <div class="ui header">Indormacion aqui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del modal -->
+
+        <!-- Fin del acordeon -->
+        <div class="ui vertical segment" id="historia">
+            <div class="ui stackable grid">
+                <div class="ten wide column">
+                    <h1 class="ui header">
+                        Historia.
+                    </h1>
+                    <p>
+                        Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+                        ligula porta felis euismod semper. Praesent commodo cursus magna,
+                        vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                        commodo.
+                    </p>
+                </div>
+                <div class="six wide right aligned column">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.6212757109065!2d-92.91689342523625!3d17.996348682998406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd840ae5699a7%3A0x229c08af4bd4f6a9!2zTWVyY2FkbyBQw7pibGljbyAnSm9zw6kgTWFyw61hIFBpbm8gU3XDoXJleic!5e0!3m2!1ses-419!2smx!4v1716068840914!5m2!1ses-419!2smx"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="ui vertical segment">
+            <div class="ui two column grid">
+                <div class="column">
+                    &copy; 2024 La Abundancia, Inc. · <a href="#root">Privacy</a> ·
+                    <a href="#root">Terms</a>
+                </div>
+                <div class="right aligned column">
+                    <a href="#root">Back to top</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ui.accordion').accordion();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".ui.toggle.button").click(function () {
+                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+            });
+
+            $(".ui.dropdown").dropdown();
+
+            $(".slide").slick({
+                autoplay: true,
+                dots: true,
+                speed: 500
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#open-modal-sanjudas').on('click', function () {
+                $('#san-judas-modal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#open-modal-virgen').on('click', function () {
+                $('#guadalupe-modal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#open-modal-nacimiento').on('click', function () {
+                $('#nacimiento-modal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#open-modal-nuevo').on('click', function () {
+                $('#chino-modal').modal('show');
+            });
+        });
+    </script>
+    <script>
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+    </script>
+    <script>
+        $('.ui.inverted.button').click(function () {
+            var targetModal = $(this).data('target');
+            $('#' + targetModal).modal('show');
+        });
+    </script>
+</body>
+
+</html>
